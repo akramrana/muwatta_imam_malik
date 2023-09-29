@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="5dp"
+    android:layout_height="wrap_content"
+    android:clickable="false">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:orientation="vertical"
+        android:background="@drawable/bg">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/hid"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/text_ar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:gravity="right"
+                android:textColor="@color/colorBlack"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:id="@+id/text_bn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:gravity="left"
+                android:textColor="@color/colorBlack"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:id="@+id/text_en"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:gravity="left"
+                android:textColor="@color/colorBlack"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:id="@+id/ref"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:gravity="left"
+                android:textColor="@color/colorBlack"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:id="@+id/grades"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:gravity="left"
+                android:textColor="@color/colorPrimary"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <!--                <Button-->
+            <!--                    android:id="@+id/viewBtn"-->
+            <!--                    android:layout_width="wrap_content"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:text="@string/string_view"-->
+            <!--                    android:textSize="9dp"-->
+            <!--                    android:drawableTop="@android:drawable/ic_menu_view"-->
+            <!--                    android:background="@drawable/list_custom_border"-->
+            <!--                    android:gravity="center_vertical|center"-->
+            <!--                    android:layout_margin="2dp"/>-->
+
+            <Button
+                android:id="@+id/bookmarkBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/string_bkmark"
+                android:textSize="9sp"
+                android:drawableTop="@android:drawable/btn_star"
+                app:backgroundTint="@null"
+                android:background="@drawable/customborder"
+                android:gravity="center_vertical|center"
+                android:layout_margin="2dp"/>
+
+            <Button
+                android:id="@+id/copyButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/string_cp"
+                android:layout_toRightOf="@id/bookmarkBtn"
+                android:textSize="9sp"
+                android:drawableTop="@android:drawable/ic_menu_set_as"
+                app:backgroundTint="@null"
+                android:background="@drawable/customborder"
+                android:gravity="center_vertical|center"
+                android:layout_margin="2dp"/>
+
+
+            <Button
+                android:id="@+id/shareButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/string_share"
+                android:textSize="9sp"
+                android:drawableTop="@android:drawable/ic_menu_share"
+                app:backgroundTint="@null"
+                android:background="@drawable/customborder"
+                android:layout_margin="2dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

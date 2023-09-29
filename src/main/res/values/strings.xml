@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Muwatta Imam Malik</string>
+    <string name="string_delete">Delete</string>
+    <string name="string_share">Share</string>
+    <string name="string_cp">Copy</string>
+    <string name="string_bkmark">Bookmark</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="book_txt">Muwatta Imam Malik</string>
+</resources>
